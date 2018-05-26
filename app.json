@@ -1,7 +1,20 @@
 {
-	"buildpacks": [
-		{
-			"url": "heroku/python"
-		}
-	]
+  "name": "OofBot",
+  "description": "OOF",
+  "image": "heroku/python",
+  "repository": "https://github.com/swissChili/OofBot",
+  "keywords": ["python", "discord" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "run": "python3 main.py",
+      }
+    }
+  }
 }
