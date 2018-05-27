@@ -10,12 +10,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if "roblox" in message.content.lower():
+	if "blox" in message.content.lower():
 		message = await client.send_message(message.channel, "OOF")
 
 	elif "oofbot" in message.content.lower():
 		message = await client.send_message(message.channel, "You called?")
-		
+
 	elif "robux" in message.content.lower():
 		message = await client.send_message(message.channel, "$$$ https://www.roblox.com/upgrades/robux $$$")
 
