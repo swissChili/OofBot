@@ -2,6 +2,7 @@ import discord
 import asyncio
 
 client = discord.Client()
+botkey = ""
 
 @client.event
 async def on_ready():
@@ -19,4 +20,4 @@ async def on_message(message):
 	elif "robux" in message.content.lower():
 		message = await client.send_message(message.channel, "$$$ https://www.roblox.com/upgrades/robux $$$")
 
-client.run("NDQ5OTg1MDI0MTM4MjgwOTcw.DesowQ.Rk0Z8n8jBm3ynH8pZ2zsnF8Mw3U")
+client.run(botkey)
